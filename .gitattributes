@@ -1,0 +1,12 @@
+# Handle line endings automatically for all text files
+# Default to CRLF for Windows-centric development as requested
+* text=auto eol=lf
+
+# Windows Executables 
+# Force CRLF for batch scripts to ensure they run in CMD/PowerShell
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
+
+# Unix/Linux Compatibility
+# Shell scripts MUST use LF to avoid '\r' errors in Unix/Linux
+*.sh text eol=lf

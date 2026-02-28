@@ -1,0 +1,37 @@
+# This configuration is based on the Google C++ Style Guide.
+
+Language: Cpp
+BasedOnStyle: Google
+
+# Core Layout
+# Use 2 spaces for indentation and never use tabs.
+IndentWidth: 2
+ColumnLimit: 100
+UseTab: Never
+
+# Braces and Control Statements
+# Attach braces to the end of the line (Google standard).
+BreakBeforeBraces: Attach
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+
+# Spacing and Alignment
+# Align pointer and reference to the left: int* ptr; (Google style)
+DerivePointerAlignment: false
+PointerAlignment: Left
+
+# Add 2 spaces before trailing comments for better separation.
+SpacesBeforeTrailingComments: 2
+
+# Includes
+# Automatically sort #include directives alphabetically.
+SortIncludes: true
+IncludeBlocks: Regroup
+
+# Modern C++ Features
+# Use the latest C++ standard features for formatting.
+Standard: Latest
+
+# Ensure the file ends with a single newline.
+InsertNewlineAtEOF: true
