@@ -1,0 +1,5 @@
+# Disable all checks for external libraries
+Checks: '-*'
+
+# Do not inherit any checks from the parent (root) configuration
+InheritParentConfig: false
